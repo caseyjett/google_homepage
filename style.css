@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box; 
+}
+.body {
+   position: relative; 
+}
+      
+input, 
+.input,
+.main {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    top: 35%;
+}
+
+input {
+    width: 414px;
+    height: 39px; 
+    border: none;
+    top: 50%;
+}
+
+.input {
+    border-radius: 50px;
+    width: 482px;
+    height: 44px;
+    border: 1px solid lightgrey;
+    top: 46%;
+}
+
+button {
+    background-color: #f2f2f2;
+    padding: 10px 16px;
+    border-radius: 5px; 
+    margin: 5px;
+    border: none;  
+}
+
+button:hover {
+    border: 1px solid black;  
+}
+
+.btn {
+    position: absolute; 
+    left: 50%; 
+    top: 54%; 
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    padding: 16px 16px; 
+}
+
+nav .right, 
+nav .left, 
+footer .right, 
+footer .left {
+    float: left;
+}
+
+nav .order, 
+footer .order {
+    float: right; 
+}
+
+nav li, 
+footer li {
+    display: inline-block; 
+    padding: 0px 16px;
+}
+
+.waffle img {
+    width: 30px;
+
+}
+
+
+.avatar {
+    background-color: navy;
+    color: white; 
+    text-align: center; 
+    border-radius: 50%;
+    width: 32px; 
+    height: 32px; 
+    padding: 0; 
+     
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    background-color: #f2f2f2; 
+    width: 100%; 
+    padding: 16px; 
+    
+}
+
+
+
+
+
+
