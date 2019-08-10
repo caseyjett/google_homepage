@@ -10,13 +10,64 @@
 
 a {
     text-decoration: none;
-    color: black; 
+     
+}
+
+a:not(.avatar) {
+    color: black;
     opacity: 0.75; 
 }
 
 a:hover {
     text-decoration: underline;
 }
+
+span.avatar {
+    color: #ffffff;
+}
+
+nav {
+    padding: 16px 16px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.store {
+    margin-right: auto; 
+}
+
+footer .right, 
+footer .left {
+    float: left;
+}
+
+footer .order {
+    float: right; 
+}
+
+nav li, 
+footer li {
+    display: inline-block; 
+    padding: 0px 10px;
+}
+
+.waffle img {
+    width: 18px;
+}
+
+#avatar {
+    background-color: navy;
+    color: white; 
+    text-align: center; 
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px; 
+    margin: 0 8px; 
+    padding: 0;  
+    cursor: pointer; 
+    font-size: 21px;
+}
+
       
  
 .input,
@@ -63,6 +114,42 @@ input:focus {
     padding: 0 5px; 
 }
 
+.tooltip {
+    position: relative; 
+    display: inline-block; 
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden; 
+    width: 105px; 
+    background-color: black; 
+    color: #fff; 
+    font-size: 11px; 
+    font-weight: bold;  
+    text-align: center;
+    padding: 7px; 
+    position: absolute; 
+    z-index: 1;
+    top: 175%;
+    left: 50%; 
+    margin-left: -53px; 
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
 button {
     background-color: #f2f2f2;
     color: #5f6368;
@@ -82,45 +169,6 @@ button:hover {
     left: 50%; 
     top: 54%; 
     transform: translate(-50%, -50%);
-}
-
-nav {
-    padding: 16px 16px; 
-}
-
-nav .right, 
-nav .left, 
-footer .right, 
-footer .left {
-    float: left;
-}
-
-nav .order, 
-footer .order {
-    float: right; 
-}
-
-nav li, 
-footer li {
-    display: inline-block; 
-    padding: 0px 16px;
-}
-
-.waffle img {
-    width: 30px;
-
-}
-
-
-.avatar {
-    background-color: navy;
-    color: white; 
-    text-align: center; 
-    border-radius: 50%;
-    width: 32px; 
-    height: 32px; 
-    padding: 0; 
-     
 }
 
 footer {

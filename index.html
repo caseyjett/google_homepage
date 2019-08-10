@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CJ's Google</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="GoogleG.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <li class="right"><a href="#">About</a></li>
-            <li class="right"><a href="#">Store</a></li>
-            <div class="order">
-                <li class="left"><a href="#">Gmail</a></li>
-                <li class="left"><a href="#">Images</a></li>
-                <li class="left waffle"><a href="#"><img src="GoogleWaffle.png" alt="Google Waffle"></a></li>
-                <li class="left avatar"><a href="#">C</a></li>
-            </div>
+                <li><a href="#">About</a></li>
+                <li class="store"><a href="#">Store</a></li>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li class="waffle"><a href="#"><img src="GoogleWaffle.png" alt="Google Waffle"></a></li>
+                <li id="avatar"><a href="#"><span class="avatar">C</span></a></li>
         </nav>
     </header>
     <div class="body"></div>
@@ -28,7 +28,10 @@
         </div>
             <div class="input">
                 <input type="text">
-                <img class="voice" src="GoogleVoice.png" alt="Google Voice Icon">
+                <div class="tooltip">
+                    <img class="voice" src="GoogleVoice.png" alt="Google Voice Icon">
+                    <span class="tooltiptext">Search by voice</span>
+                </div>
             </div>
             <div class="btn">
                 <button>Google Search</button>
